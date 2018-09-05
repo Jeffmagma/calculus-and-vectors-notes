@@ -1,6 +1,31 @@
 \documentclass{article}
 \usepackage[margin=1in]{geometry}
+\usepackage{amsmath, amssymb, tikz, pgfplots, esvect}
+\usetikzlibrary{positioning, arrows}
+
+\makeatletter
+\g@addto@macro\bfseries{\boldmath}
+\makeatother
+
+\renewcommand\thesubsubsection{\thesubsection{} \Alph{subsubsection}}
+
+\title{\vspace{-3ex}Calculus and Vectors Notes}
+\author{Jeffrey Gao\and More Contributors Later}
 
 \begin{document}
-kill me now
+	\maketitle
+	\tableofcontents
+	\newpage
+	\setcounter{section}{8}
+	\subsection{Vector and Parametric Equations of a Line in $R^2$}
+	\subsubsection{Vector Equation of a Line in $R^2$}
+	For a line $L$ that passes through the point $P_0(x_0,\,y_0)$ that is parallel to the vector $\vv{u}$ and the point $P(x,\,y)$ is a generic point on the line:\\
+	\begin{tikzpicture}
+		\draw[->] (0,0) -- (0,4);
+		\draw[->] (0,0) -- (6,0);
+		\draw[dashed] (0,3) node[left] {$y$} -- (3,3);
+	\end{tikzpicture}
+	\\
+	$\vv{P_0P}=t\vv{u}$\\
+	$\vv{OP}-\vv{OP_0}=t\vv{u}$
 \end{document}
